@@ -1,0 +1,84 @@
+/* general styling */
+:root{
+    --backgroundcolor: #000000
+    /* --witteText: #FFFFFF */
+}
+
+body{
+    background-color: var(--backgroundcolor);
+}
+
+p{
+    color: white
+}
+
+
+
+/* styling header */
+header img{
+    margin: 1em;
+    max-height: 27px; 
+}
+/* end styling header */
+
+
+
+/* styling navigatie */
+nav{
+    position: absolute;
+    left: 80%;
+    top: 1%;
+}
+
+nav img{
+    display: none;
+} 
+/* end styling navigatie */
+
+
+
+/* styling main - section --> inleiding*/
+h1 {
+    font-size: 64px;
+    font-family: sans-serif;
+    color: white;
+    margin-top: none;
+    margin-left: .3em;
+}
+
+main p{
+    margin-left: 1em;
+    margin-right: 1em;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+main h2{
+    color: #0064FF;
+    font-size: 34px;
+    font-family: sans-serif;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+#afbeeldingen img {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75em;
+    padding: none;
+    max-height: 1300px;
+    max-width: 375px;
+    
+}
+
+
+/* media queries */
+/* Desktop */
+@media (min-width: 75em){
+
+}
+
+/* Ipad */
+@media (min-width: 50em){
+
+}
