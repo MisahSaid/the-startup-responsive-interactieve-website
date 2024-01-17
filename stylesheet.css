@@ -4,6 +4,18 @@
     /* --witteText: #FFFFFF */
 }
 
+
+/* fonts laden */
+@font-face {
+    font-family: 'Antique Legacy';
+    src: url('assets/fonts/Antique-Legacy/Antique-Legacy-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Offbit';
+    src: url('assets/fonts/Offbit/OTF/OffBit-101Bold.otf');
+}
+
 body{
     background-color: var(--backgroundcolor);
 }
@@ -40,10 +52,16 @@ nav img{
 /* styling main - section --> inleiding*/
 h1 {
     font-size: 64px;
-    font-family: sans-serif;
+    font-family: 'Antique Legacy';
     color: white;
     margin-top: none;
     margin-left: .3em;
+}
+
+h2{
+    font-size: 64px;
+    font-family: 'Offbit';
+    color: #0064FF;
 }
 
 main p{
@@ -56,7 +74,7 @@ main p{
 main h2{
     color: #0064FF;
     font-size: 34px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     margin-left: .5em;
     margin-right: .5em;
 }
