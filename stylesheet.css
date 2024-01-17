@@ -1,9 +1,10 @@
 /* general styling */
-:root{
-    --backgroundcolor: #000000
-    /* --witteText: #FFFFFF */
+:root {
+    --backgroundcolor: #000000; /* Voeg hier de puntkomma toe */
+    --headingfont: 'Antique Legacy', sans-serif; /* Verander sans-serif door een back-up font naar keuze */
+    --unregulartextfont: 'Offbit', sans-serif;
+    --lighttext: 'Antique Legacy Light', sans-serif;
 }
-
 
 /* fonts laden */
 @font-face {
@@ -12,17 +13,24 @@
 }
 
 @font-face {
+    font-family: 'Antique Legacy Light';
+    src: url(assets/fonts/Antique-Legacy/Antique-Legacy-Light.otf);
+    font-weight: 300;
+}
+
+@font-face {
     font-family: 'Offbit';
     src: url('assets/fonts/Offbit/OTF/OffBit-101Bold.otf');
+    font-weight: 300;
 }
+
+
 
 body{
     background-color: var(--backgroundcolor);
+    color: white;
 }
 
-p{
-    color: white
-}
 
 
 
@@ -54,31 +62,51 @@ h1 {
     font-size: 64px;
     font-family: 'Antique Legacy';
     color: white;
-    margin-top: none;
+    margin-top: 1em;
     margin-left: .3em;
+    margin-bottom: 0;
 }
 
 h2{
     font-size: 64px;
-    font-family: 'Offbit';
+    font-family: var(--unregulartextfont);
     color: #0064FF;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: .3em;
 }
 
-main p{
+
+/* styling section;inleiding */
+#inleiding p{
+    font-family: var(--lighttext);
+    font-size: 18px;
     margin-left: 1em;
     margin-right: 1em;
-    font-family: sans-serif;
-    font-size: 18px;
 }
 
-main h2{
+
+h3 {
+    font-size: 26px;
+    font-family: var(--lighttext);
     color: #0064FF;
-    font-size: 34px;
-    /* font-family: sans-serif; */
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: .5em;
-    margin-right: .5em;
 }
 
+ul {
+    padding-left: 1em;
+}
+
+li {
+    font-size: 18px;
+    font-family: var(--lighttext);
+    margin-left: 1em;
+}
+/* end styling section; inleiding */
+
+/* styling section: afbeeldingen */
 #afbeeldingen img {
     display: flex;
     flex-direction: column;
@@ -89,6 +117,52 @@ main h2{
     
 }
 
+
+
+/* styling section: text */
+#text p{
+    font-size: 36px;
+    font-family: var(--lighttext);
+    margin-left: .3em;
+    margin-right: .3em;
+}
+
+#text strong{
+    font-weight: 300;
+    font-family: var(--lighttext);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+/* footer styling */
+footer p:first-child {
+    font-size: 64px;
+    font-family: var(--lighttext);
+    font-weight: 400;
+    margin-left: .3em;
+    margin-right: 1.3em;
+    margin-top: 1.5em;
+    margin-bottom: 0;
+}
+
+footer p:nth-child(2){
+    font-size: 70px;
+    font-family: var(--unregulartextfont);
+    font-weight: 400;
+    margin-left: .3em;
+    margin-right: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #0064FF;
+}
+
+footer p:nth-child(3){
+    font-size: 18px;
+    font-family: var(--lighttext);
+    margin-left: 1em;
+    margin-right: 1em;
+}
 
 form{
     color: white;
