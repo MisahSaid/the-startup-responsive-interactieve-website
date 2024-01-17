@@ -1,7 +1,9 @@
 /* general styling */
 :root {
-    --backgroundcolor: #000000; /* Voeg hier de puntkomma toe */
-    --headingfont: 'Antique Legacy', sans-serif; /* Verander sans-serif door een back-up font naar keuze */
+    --backgroundcolor: #000000;
+    --colortextwhite: white;
+    --colortextblue: #0064FF;
+    --headingfont: 'Antique Legacy', sans-serif; 
     --unregulartextfont: 'Offbit', sans-serif;
     --lighttext: 'Antique Legacy Light', sans-serif;
 }
@@ -28,7 +30,7 @@
 
 body{
     background-color: var(--backgroundcolor);
-    color: white;
+    color: var(--colortextwhite);
 }
 
 
@@ -61,7 +63,7 @@ nav img{
 h1 {
     font-size: 64px;
     font-family: 'Antique Legacy';
-    color: white;
+    color: var(--colortextwhite);
     margin-top: 1em;
     margin-left: .3em;
     margin-bottom: 0;
@@ -70,7 +72,7 @@ h1 {
 h2{
     font-size: 64px;
     font-family: var(--unregulartextfont);
-    color: #0064FF;
+    color: var(--colortextblue);
     margin-top: 0;
     margin-bottom: 0;
     margin-left: .3em;
@@ -89,7 +91,7 @@ h2{
 h3 {
     font-size: 26px;
     font-family: var(--lighttext);
-    color: #0064FF;
+    color: var(--colortextblue);
     margin-top: 0;
     margin-bottom: 0;
     margin-left: .5em;
@@ -161,7 +163,7 @@ footer p:nth-child(2){
     margin-right: 1em;
     margin-top: 0;
     margin-bottom: 0;
-    color: #0064FF;
+    color: var(--colortextblue);
 }
 
 footer p:nth-child(3){
@@ -176,7 +178,7 @@ footer p:nth-child(4){
 
 
 a {
-    color: white;
+    color: var(--colortextwhite);
     font-size: 18px;
     font-family: var(--lighttext);
 }
@@ -191,7 +193,7 @@ footer a:nth-child(2){
 
 form{
     display: none;
-    color: white;
+    color: var(--colortextwhite);
 }
 
 /* media queries */
