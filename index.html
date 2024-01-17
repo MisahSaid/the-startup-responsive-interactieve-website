@@ -46,10 +46,49 @@
         <p>Please let us know before february 8 if you are joining us.</p>
         <p><button>there</button>Or<button>square</button></p>
 
+        
         <form>
-            <label>
-            </label>
+            <h2>Awesome! Please fill in the form</h2>
+
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label>How many people?</label>
+            <imput type="radio" id="one-person" name="people_count" value="1" checked></imput>
+            <label for="one-person">1</label>
+
+            <input type="radio" id="two-people" name="people_count" value="2">
+            <label for="two-people">2</label>
+    
+            <input type="radio" id="three-people" name="people_count" value="3">
+            <label for="three-people">3</label>
+
+            <input type="radio" id="four-people" name="people_count" value="4">
+            <label for="four-people">4</label>
+            <br>
+
+            
+            <input type="submit" value="Submit">
         </form>
     </footer>
 </body>
 </html>
+
+
+<!-- <script>
+// classes aanroepen van de HTML en in variabele stoppen
+   const buttonAnimationClick =  document.querySelectorAll(".be-there");
+   const squareAnimation = document.querySelectorAll(".square");
+
+// Eventhandler op variabele wanneer er op die class op "geclicked"
+    buttonAnimationClick.addEventListener("click", () => {
+        // Als er wordt geclicked dan wordt deze pagetransition van
+        // geactiveerd door dat de class wordt toegevoegd op de square
+        squareAnimation.classList.add(".pagetransition")
+    });
+</script> -->

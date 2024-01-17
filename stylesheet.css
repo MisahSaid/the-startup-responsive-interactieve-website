@@ -72,6 +72,10 @@ main h2{
 }
 
 
+form{
+    color: white;
+}
+
 /* media queries */
 /* Desktop */
 @media (min-width: 75em){
