@@ -135,7 +135,14 @@ li {
 
 
 
-/* footer styling */
+/* footer styling section: question*/
+.question{
+    margin-bottom: 10em;
+}
+
+footer p{
+    font-family: var(--lighttext);
+}
 footer p:first-child {
     font-size: 64px;
     font-family: var(--lighttext);
@@ -159,12 +166,31 @@ footer p:nth-child(2){
 
 footer p:nth-child(3){
     font-size: 18px;
-    font-family: var(--lighttext);
     margin-left: 1em;
     margin-right: 1em;
 }
 
+footer p:nth-child(4){
+    margin-left: 1em;
+}
+
+
+a {
+    color: white;
+    font-size: 18px;
+    font-family: var(--lighttext);
+}
+
+footer a:first-child{
+    padding-right: 1em;
+}
+
+footer a:nth-child(2){
+    padding-left: 1em;
+}
+
 form{
+    display: none;
     color: white;
 }
 
