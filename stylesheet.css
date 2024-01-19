@@ -204,6 +204,7 @@ form{
 
 }
 
+
 button{
     background: none;
     border: none;
@@ -214,6 +215,17 @@ button{
     text-decoration: underline;
     font-size: 18px;
 }
+
+/* button:hover {
+    display: none;
+    background-color: var(--colortextblue);
+    border: 2em;
+    padding: 3.5em;
+    rotate: 45deg;
+} */
+
+
+
 
 button:first-child {
     margin-right: 1em;
