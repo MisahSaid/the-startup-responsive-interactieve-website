@@ -191,21 +191,52 @@ footer a:nth-child(2){
     padding-left: 1em;
 }
 
-form{
-    display: none;
-    color: var(--colortextwhite);
-}
 
-.square {
+/* popup */
+.full-screen{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     background-color: var(--colortextblue);
 }
 
-.pagetransition{
 
+.flex-container-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.pagetransition{
+    animation: expand 3s;
+}
+
+@keyframes expand{
+        from {
+            
+        }
+            
+        to {
+            
+        }
+    }
+
+
+form{
+    color: var(--colortextwhite);
 }
 
 
-button{
+
+button {
+    position: relative;
     background: none;
     border: none;
     padding: 0;
@@ -214,15 +245,25 @@ button{
     color: var(--colortextwhite);
     text-decoration: underline;
     font-size: 18px;
+    overflow: hidden; /* Ensure the square stays within the button */
 }
 
-/* button:hover {
-    display: none;
+button::before {
+    content: '';
+    position: absolute;
+    width: 120%; /* Adjust the width as needed */
+    height: 120%; /* Adjust the height as needed */
     background-color: var(--colortextblue);
-    border: 2em;
-    padding: 3.5em;
-    rotate: 45deg;
-} */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transform: scale(0); /* Initial scale to hide the square */
+    transition: transform 0.3s ease; /* Add a transition effect */
+    z-index: -1;
+}
+
+button:hover::before {
+    transform: scale(1); /* Scale to 100% on hover */
+}
+
 
 
 

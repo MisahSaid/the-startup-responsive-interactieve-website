@@ -45,14 +45,14 @@
 
     <footer>
 
-        <section class="question">
+        <div class="question">
             <p>Are you in for</p>
             <p>some fun?</p>
             <p>Please let us know before february 8 if you are joining us.</p>
-            <p><button class="be-there"> Be there</button> Or <button class="be-square"> Be square</button></p>
-        </section>
+            <p><button onclick="togglePopup()"> Be there</button> Or <button class="be-square"> Be square</button></p>
+        </div>
         
-        <form>
+        <form class="full-screen hidden flex-container-center">
             <h4>Awesome! Please fill in the form</h4>
 
             <label for="first-name">First Name:</label>
@@ -84,16 +84,3 @@
 </body>
 </html>
 
-
-<!-- <script>
-// classes aanroepen van de HTML en in variabele stoppen
-   const buttonAnimationClick =  document.querySelectorAll(".be-there");
-   const squareAnimation = document.querySelectorAll(".square");
-
-// Eventhandler op variabele wanneer er op die class op "geclicked"
-    buttonAnimationClick.addEventListener("click", () => {
-        // Als er wordt geclicked dan wordt deze pagetransition van
-        // geactiveerd door dat de class wordt toegevoegd op de square
-        squareAnimation.classList.add(".pagetransition")
-    });
-</script> -->
