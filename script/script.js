@@ -5,7 +5,7 @@
 // Gebruik in JavaScript naam.classList.toggle() om een andere class aan een element toe te voegen.
 // ProTip: Gebruik bij elke stap console.log() om te controleren of alles werkt zoals je verwacht dat het werkt.
 
-
+// be there
 const popup = document.querySelector(".full-screen");
 console.log(popup);
 
@@ -14,3 +14,15 @@ function togglePopup(){
     popup.classList.add("pagetransition");
 }
 
+
+// be square
+const besquareSection = document.querySelector(".besquare");
+const beSquareButton = document.querySelector(".be-square");
+console.log(besquareSection);
+
+beSquareButton.addEventListener("click", toggleBesquare);
+
+function toggleBesquare() {
+    besquareSection.classList.toggle("hidden");
+    besquareSection.classList.add("pagetransition");
+}

@@ -43,22 +43,6 @@ header img{
 }
 /* end styling header */
 
-
-
-/* styling navigatie */
-nav{
-    position: absolute;
-    left: 80%;
-    top: 1%;
-}
-
-nav img{
-    display: none;
-} 
-/* end styling navigatie */
-
-
-
 /* styling main - section --> inleiding*/
 h1 {
     font-size: 64px;
@@ -114,8 +98,8 @@ li {
     flex-direction: column;
     gap: 3.75em;
     padding: none;
-    max-height: 1300px;
-    max-width: 375px;
+    max-height: 100%;
+    max-width: 100%;
     
 }
 
@@ -155,7 +139,7 @@ footer p:first-child {
     margin-bottom: 0;
 }
 
-footer p:nth-child(2){
+.question p:nth-child(2){
     font-size: 70px;
     font-family: var(--unregulartextfont);
     font-weight: 400;
@@ -229,8 +213,15 @@ footer a:nth-child(2){
     }
 
 
+h4{
+    font-family: var(--headingfont);
+    font-size: 18px;
+}
+
 form{
     color: var(--colortextwhite);
+    font-family: var(--headingfont);
+    font-size: 16px;
 }
 
 
@@ -276,11 +267,119 @@ button:nth-child(2){
     margin-left: 1em;
 }
 
+
+
+/* besqaure popup */
+h5{
+    font-family: var(--headingfont);
+    font-size: 18px;
+}
+
+.besqaure svg{
+    fill: aliceblue;
+}
+
+
+
+
+
+
 /* media queries */
 /* Desktop */
 @media (min-width: 75em){
+    *{
+        padding-left: .75em;
+        padding-right: .75em;
+    }
 
-}
+    /* styling main - section inleiding */
+    h1{
+        font-size: 120px;
+        padding: 0;
+    }
+
+    h2{
+        font-size: 122px;
+        padding: 0;
+
+    }
+
+    #inleiding p{
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 26px;
+    }
+
+    li{
+        font-size: 20px;
+    }
+
+    /* section afbeeldingen */
+    #afbeeldingen img {
+        padding: 0;
+        max-height: auto;
+        max-width: auto;
+    }    
+
+    #afbeeldingen{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr .5fr;
+        gap: 1.75em;
+    }
+
+    #afbeeldingen img:first-child{
+        grid-area: 1 / 1 / 4 / 2;
+        /* grid-row-start, grid-column-start, grid-row-end, en grid-column-end. */
+        height: 1045px;
+        width: 836px;
+    }
+
+    #afbeeldingen img:nth-child(2){
+        grid-area: 1 / 2 / 2 / 3;
+        width: 404px;
+        height: 404px;
+    }
+
+    #afbeeldingen img:nth-child(3){
+        grid-area: 2 / 2/ 3 / 3;
+        width: 404px;
+        height: 404px;
+       
+    }
+
+    /* section id #text */
+    #text p{
+        font-size: 64px;
+        padding-left: 0;
+    }
+
+    #text strong{
+        font-size: 64px;
+        padding-left: 0;
+    }
+
+    /* div class questions */
+    footer p:first-child{
+        padding-left: 0;
+        font-size: 120px;
+    }
+
+    .question p:nth-child(2){
+        font-size: 130px;
+        padding-left: 0;
+    }
+
+    footer p:nth-child(3){
+        font-size: 20px;
+    }
+
+    button{
+        font-size: 20px;
+    }
+    
 
 /* Ipad */
 @media (min-width: 50em){
