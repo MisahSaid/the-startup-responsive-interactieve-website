@@ -38,9 +38,9 @@
             <img src="assets/IMG_4473.jpeg" alt="puinhoop">
         </div>
 
-        <section id="text">
+        <div id="text">
             <p>Expect a lot of champagne popping, good music, amazing food, nice <strong>people and last but not least a beautifull venue.</strong></p>
-        </section>
+        </div>
     </main>
 
     <footer>
@@ -64,18 +64,21 @@
             <br>
 
             <label>How many people?</label>
-            <input type="radio" id="one-person" name="people_count" value="1" checked></input>
-            <label for="one-person">1</label>
+            <div>
+                <label>
+                    <input type="radio" name="people_count" value="1" checked>
+                    1
+                </label>
 
-            <input type="radio" id="two-people" name="people_count" value="2">
-            <label for="two-people">2</label>
+                <input type="radio" id="two-people" name="people_count" value="2">
+                <label for="two-people">2</label>
     
-            <input type="radio" id="three-people" name="people_count" value="3">
-            <label for="three-people">3</label>
+                <input type="radio" id="three-people" name="people_count" value="3">
+                <label for="three-people">3</label>
 
-            <input type="radio" id="four-people" name="people_count" value="4">
-            <label for="four-people">4</label>
-            <br>
+                <input type="radio" id="four-people" name="people_count" value="4">
+                <label for="four-people">4</label>
+            </div>
 
             
             <input type="submit" value="save">

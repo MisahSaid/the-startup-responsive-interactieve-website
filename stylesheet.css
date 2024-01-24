@@ -255,8 +255,11 @@ button:hover::before {
     transform: scale(1); /* Scale to 100% on hover */
 }
 
+input:checked + label{
 
+}
 
+label:has(:checked)
 
 
 button:first-child {
@@ -335,6 +338,7 @@ h5{
         /* grid-row-start, grid-column-start, grid-row-end, en grid-column-end. */
         height: 1045px;
         width: 836px;
+        object-fit: cover;
     }
 
     #afbeeldingen img:nth-child(2){
