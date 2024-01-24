@@ -51,6 +51,8 @@ h1 {
     margin-top: 1em;
     margin-left: .3em;
     margin-bottom: 0;
+    position: relative; /* Zet de positie op relatief */
+    z-index: 0;
 }
 
 h2{
@@ -60,15 +62,32 @@ h2{
     margin-top: 0;
     margin-bottom: 0;
     margin-left: .3em;
+    position: relative; /* Zet de positie op relatief */
+    z-index: 0;
 }
 
 
+
 /* styling section;inleiding */
+#inleiding {
+    display: flex;
+    flex-direction: column;
+}
+
 #inleiding p{
     font-family: var(--lighttext);
     font-size: 18px;
     margin-left: 1em;
     margin-right: 1em;
+    padding-top: 2em;
+}
+
+#inleiding img{
+    position: relative;
+    width: 185%; 
+    height: 13vh;
+    margin-top: -165px;
+    /* z-index: 1; */
 }
 
 
@@ -191,7 +210,9 @@ footer a:nth-child(2){
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .hidden{
@@ -202,29 +223,61 @@ footer a:nth-child(2){
     animation: expand 3s;
 }
 
-@keyframes expand{
-        from {
-            
-        }
-            
-        to {
-            
-        }
-    }
-
-
 h4{
-    font-family: var(--headingfont);
+    font-family: var(--lighttext);
     font-size: 18px;
 }
 
 form{
     color: var(--colortextwhite);
-    font-family: var(--headingfont);
+    font-family: var(--lighttext);
     font-size: 16px;
+    position: relative;
+}
+
+form button:first-child{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+#first-name, #email, #dietary{
+    box-sizing: border-box;
+    background: var(--colortextwhite);
+    border: none;
+    width: 100%;
+    height: 3em;
+    margin-top: .5em;
+    font-family: var(--lighttext);
+    padding-left: 1em;
 }
 
 
+#how-many{
+    margin-bottom: .5em;
+    padding-top: 1em; 
+}
+
+label[for="dietary"] {
+    padding-top: 2em; 
+}
+
+label{
+    margin-right: 1em;
+}
+
+
+input[type="submit"]{
+    font-family: var(--lighttext), sans-serif;
+    font-size: 18px;
+    background-color: var(--colortextblue);
+    color: var(--colortextwhite);
+    border: none;
+    padding-top: 2em;
+    text-decoration: underline;
+}
 
 button {
     position: relative;
@@ -255,11 +308,6 @@ button:hover::before {
     transform: scale(1); /* Scale to 100% on hover */
 }
 
-input:checked + label{
-
-}
-
-label:has(:checked)
 
 
 button:first-child {
@@ -270,7 +318,9 @@ button:nth-child(2){
     margin-left: 1em;
 }
 
-
+form img{
+    margin-left: 12.5em;
+}
 
 /* besqaure popup */
 h5{

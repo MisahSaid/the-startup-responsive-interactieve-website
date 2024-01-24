@@ -20,7 +20,7 @@
         <section id="inleiding">
             <h1>SAVE THE DATE!</h1>
             <h2>7 MARCH</h2>
-            <!-- <img src="assets/stickers/!!!.svg" alt="uitroepteken"> -->
+            <img src="assets/stickers/!!!.svg" alt="uitroepteken">
             <p>We are thrilled to finally share this invitation with you for the grand opening celebration of our brand-new studio in The Hague.</p>
             <br>
             <h3>Details</h3>
@@ -53,6 +53,7 @@
         </div>
         
         <form class="full-screen hidden flex-container-center">
+            <button>Close</button>
             <h4>Awesome! Please fill in the form</h4>
 
             <label for="first-name">First Name:</label>
@@ -63,13 +64,13 @@
             <input type="email" id="email" name="email" required>
             <br>
 
-            <label>How many people?</label>
+            <label id="how-many">How many people?</label>
             <div>
-                <label>
-                    <input type="radio" name="people_count" value="1" checked>
+                <label id="radio-buttons">
+                    <input type="radio" id="one-person"  name="people_count" value="1" checked>
                     1
                 </label>
-
+                
                 <input type="radio" id="two-people" name="people_count" value="2">
                 <label for="two-people">2</label>
     
@@ -80,8 +81,12 @@
                 <label for="four-people">4</label>
             </div>
 
-            
-            <input type="submit" value="save">
+            <label for="dietary">Do you have any dietary requirements?</label>
+            <input type="text" id="dietary" name="dietary-requirements">
+
+            <input type="submit" value="Save">
+
+            <img src="assets/stickers/Yesss.svg">
         </form>
 
         <section class="besquare full-screen hidden flex-container-center ">
