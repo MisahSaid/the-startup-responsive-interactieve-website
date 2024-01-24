@@ -46,7 +46,7 @@ header img{
 /* styling main - section --> inleiding*/
 h1 {
     font-size: 64px;
-    font-family: 'Antique Legacy';
+    font-family: var(--lighttext);
     color: var(--colortextwhite);
     margin-top: 1em;
     margin-left: .3em;
@@ -82,14 +82,20 @@ h2{
     padding-top: 2em;
 }
 
-#inleiding img{
-    position: relative;
+.uitroep {
+    position: absolute;
     width: 185%; 
     height: 13vh;
-    margin-top: -165px;
+    margin-top: -1px;
     /* z-index: 1; */
 }
 
+.arrow{
+    position: absolute;
+    width: 165%; 
+    height: 16vh;
+    margin-top: 550px;
+}
 
 h3 {
     font-size: 26px;
@@ -112,17 +118,24 @@ li {
 /* end styling section; inleiding */
 
 /* styling section: afbeeldingen */
-#afbeeldingen img {
+#afbeeldingen{
     display: flex;
     flex-direction: column;
-    gap: 3.75em;
+    gap: 1em;
+}
+
+#afbeeldingen img {
     padding: none;
     max-height: 100%;
     max-width: 100%;
     
 }
 
-
+.high-five{
+    position: relative;
+    top: -550px; 
+    left: -3%;
+}
 
 /* styling section: text */
 #text p{
